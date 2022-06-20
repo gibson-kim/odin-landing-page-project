@@ -8,11 +8,11 @@ body {
 .header, .footer {
 	height: 40px;
 	display: flex;
+	background-color: #1F2937;
 }
 
 .header {
 	justify-content: space-between;
-	background-color: #1F2937;
 	color: #F9FAF8;
 	padding: 0px 150px;
 }
@@ -43,10 +43,9 @@ li {
 	display: flex;
 	justify-content:end;
 	align-items: center;
-	padding: 50px 0px;
 	background-color: #1F2937;
 	color: #F9FAF8;
-	padding: 50px 150px;
+	padding: 60px 150px 50px 150px;
 }
 
 .hero-left, .hero-right {
@@ -75,21 +74,60 @@ img#hero {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 50px 0px;
-	padding: 50px 150px;
+	padding: 30px 150px 20px 150px;
 }
 
 .steps {
+	margin-top: 10px;
 	display: flex;
+	flex: 1 0 0;
+	gap: 10px;
+}
+
+.steps > * {
+	flex: 1;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ptable {
+    display: table;
+	height: 150px;
+}
+
+.card p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+}
+
+.steps img {
+	height: 150px;
+	width: 150px;
 }
 
 .content-3 {
 	padding: 50px 0px;
 	background-color: #E5E7EB;
+	padding: 0px 150px;
+}
+
+.testimonial-text {
 	font-size: 36px;
 	font-style: italic;
+	font-weight: 300;
 	color: #1F2937;
-	padding: 0px 150px;
+}
+
+.testimonial-name {
+	font-size: 24px;
+	font-weight: bold;
+	color: #1F2937;
+	text-align: right;	
 }
 
 .content-4 {
@@ -125,8 +163,14 @@ button {
 	padding: 0px 25px;
 }
 
+.content-4-text {
+
+}
+
 .footer {
 	justify-content: center;
 	align-items: center;
 	margin-top: auto;
+	color: white;
+	padding-top: 15px;
 }
